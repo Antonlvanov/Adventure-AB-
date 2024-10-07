@@ -18,19 +18,6 @@ select BaseRate, Count(BaseRate) as Total
 from DimEmployee
 group by BaseRate
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 delete from DimEmployee where BaseRate = 25
 update DimEmployee set BaseRate = 9000 where BaseRate > 50
 select * from DimEmployee order by BaseRate
